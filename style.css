@@ -1,0 +1,197 @@
+/* -----page body configuration down here ----------- */
+body {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: auto;
+    background-color:hsl(240, 7%, 97%);
+    color: hsl(234, 12%, 34%);
+}
+/* Section 1 starts down here -----------------------*/
+.section1 {
+    text-align: center;
+    position: relative;
+}
+
+.section1 .bigFonts {
+    font-size: 2.1rem;
+    font-weight: 200;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.section1 .smallFonts {
+    font-weight: 200;
+    width: 35%;
+    margin: auto;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#boldTitle {
+    font-weight: 600;
+}
+
+
+/* Section 2 starts down here -------------------------- */
+.section2 {
+    display:flex;
+    height: 100%;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;  
+}
+
+.leftContainer,
+.middleContainer,
+.rightContainer {
+    width: 25%;
+}
+
+.middleContainer {
+    margin: 30px;
+}
+
+/* Design for 4 boxes down here -------------------------- */
+.leftBox,
+.middleBoxTop,
+.middleBoxBottom,
+.rightBox {
+    box-shadow: 5px 15px 35px hsl(233, 35%, 90%);
+    border-radius: 5px;
+    padding: 15px 25px 30px 30px;
+    background-color: white;
+}
+ 
+.leftBox {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.middleBoxTop {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.middleBoxBottom {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.rightBox {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.middleBoxTop {
+    margin-bottom: 30px;
+}
+
+/* Fonts & icons inside the 4 boxes here ----------------- */
+.section2 .bigFonts {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 10px 0 10px;
+}
+
+.section2 .smallFonts {
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 0 10px 0 10px;
+    line-height: 25px;
+    margin-top: -12px;
+}
+
+.icons  {
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: right;    
+}
+
+/* -----From here: Screen responsive design for mobiles & tablets ------ */
+
+/* for mobile phones */
+@media only screen and (max-width: 375px) {
+    
+    body {
+        background-color: white;
+    }
+
+    .mainContainer {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .section1 .bigFonts {
+        font-size: 1.4rem;        
+    }
+
+    .section1 .smallFonts {
+        font-size: 0.9rem;
+        width: 80%;      
+    }    
+    
+    .section2 {
+        flex-direction: column;                
+    }
+
+    .leftContainer,
+    .middleContainer,
+    .rightContainer {
+        width: 80%;
+    }
+}
+
+/* screen for small tablets */
+@media only screen and (max-width: 635px) {
+    
+    body {
+        background-color: white;
+    }
+
+    .mainContainer {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .section1 .bigFonts {
+        font-size: 1.45rem;        
+    }
+
+    .section1 .smallFonts {
+        font-size: 0.95rem;
+        width: 80%;      
+    }    
+    
+    .section2 {
+        flex-direction: column;                
+    }
+
+    .leftContainer,
+    .middleContainer,
+    .rightContainer {
+        width: 80%;
+    }
+}
+
+/* for more aligned small fonts of section 1 */
+@media only screen and (min-width: 636px) {
+    .section1 .smallFonts {
+        font-size: 1rem;
+        width: 35%;      
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
