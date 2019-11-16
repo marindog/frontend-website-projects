@@ -108,6 +108,20 @@ body {
     text-align: right;    
 }
 
+footer a {
+    position: absolute;
+    right: 10px;
+    border-radius: 3px;
+    border: 0.5px solid grey;
+    text-decoration: none;
+    padding: 3px;
+}
+
+footer a:hover {
+    color: grey;
+}
+    
+
 /* -----From here: Screen responsive design for mobiles & tablets ------ */
 
 /* for mobile phones */
