@@ -1,0 +1,276 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    max-width: 1440px;
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+/* -----Whole Container basic structure ----- */
+.mainContainer {
+    width: 45%;
+    height: 52%;
+    border-radius: 8px;
+    margin: auto;   
+}
+/* -----upper part of the box, padding the same as the lower part ---- */
+.container1 {
+    padding: 20px 30px 30px 40px;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.mainTitle {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.smallTitle {
+    color:hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    margin-bottom: -5px;
+    margin-top: 10px;
+    text-shadow: transparent;
+}
+
+.summ-c1 {
+    color: hsl(218, 22%, 67%);
+    opacity: 0.8;
+    line-height: 27px;
+}
+
+/* -------lower part of the box, sub-boxes (left & right) have the same padding as the upper box */
+.container2 {
+    display: flex;    
+}
+
+.left-container2, .right-container2 {
+    padding: 20px 30px 30px 40px;    
+}
+
+.left-container2 {
+    width: 50%; /*the width had to be separately set up as 50% between the left and the right, otherwise one side is bigger than the other*/
+    background-color: hsl(180, 60%, 44%);
+    color: white;
+    border-radius: 0 0 0 8px;
+}
+
+.right-container2 {    
+    width: 50%; /*the width had to be separately set up as 50% between the left and the right, otherwise one side is bigger than the other*/
+    background-color:  hsl(179, 60%, 47%);
+    color: white;
+    border-radius: 0 0 8px 0;
+}
+
+.sub-title {
+    font-weight: 700;
+    opacity:0.9;
+    font-size: 1.1rem;
+    text-shadow: 0.2px 0.2px 3px hsl(179, 43%, 37%);
+}
+
+.priceContainer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.price {
+    font-size: 2.1rem;
+    margin-right: 10px;
+    text-shadow: 0.2px 0.2px 3px hsl(179, 43%, 37%);
+}
+
+.month {
+    color: hsl(179, 60%, 72%);
+    opacity: 0.8;
+    text-shadow: 0.1px 0.1px 3px hsl(179, 43%, 37%);
+}
+
+.summ-c2 {
+    text-shadow: 0.2px 0.2px 2px hsl(179, 43%, 37%);
+    margin-top: 5px;
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+/* SignUp Box section ------ */
+.signUp {
+    padding: 15px 90px;    
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px hsl(179, 41%, 44%);
+    background-color:hsl(71, 73%, 54%);
+    color: white;
+    font-size: 1.05rem;
+    text-shadow: 0.2px 0.2px 3px hsl(74, 25%, 59%);
+}
+
+.signUp a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---Change in color on hover ---*/
+.signUp:hover {
+    background-color:hsl(71, 51%, 45%);
+}
+
+.signUp a:hover {
+    color: whitesmoke;
+}
+
+/* ---Right side of the lower box starts ------- */
+.why-us-reason {
+    color: white;
+    opacity: 0.65;
+    line-height: 21px;
+    font-size: 0.9rem;
+    text-shadow: 0.2px 0.2px 3px hsl(179, 63%, 37%);
+}
+
+/* -----Screen configuration for 1380px, 1261px, 1140px, 645px, 375px */
+@media only screen and (max-width: 1380px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .mainContainer {
+        width: 50%;
+    }
+
+    .summ-c1 span {
+        display: block;
+    }
+
+    .signUp {
+        font-size: 0.9rem;
+        padding: 15px 50px;  
+        text-align: center;
+    }
+}
+/* the below is to reduce the font sizes for smaller desktop screen */
+@media only screen and (max-width: 1261px) {
+    
+    .signUp {
+        font-size: 0.85rem;
+        padding: 15px 50px; 
+    }
+
+    .summ-c1 {
+        font-size: 0.85rem;
+    }    
+
+    .summ-c2 {
+        font-size: 0.9rem;
+    }
+    .why-us-reason {
+        font-size: 0.85rem;
+    }
+}
+    
+/* the mobile version starts from here. generic configuration/location of words not changed */
+@media only screen and (max-width:1140px) {
+
+    body {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .mainContainer {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container1 {
+        width: 100%;
+        align-self: center;        
+    }
+
+    .summ-c1 span {
+        display: inline;        
+    }
+
+    .container2 {
+        flex-direction: column;        
+    }
+
+    .left-container2, .right-container2 {
+       
+       align-self: center;
+       width: 100%;
+    }
+
+    .left-container2 {
+        border-radius: 0;
+    }
+
+    .signUp {
+        font-size: 1rem;
+    }
+
+    .right-container2 {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .summ-c1 {
+        font-size: 1rem;
+    }
+
+
+    .summ-c2 {
+        font-size: 1.2rem;
+    }
+
+    .sub-title {
+        font-size: 1.1rem;
+    }
+
+    .why-us-reason {
+        font-size: 1rem;    
+    }
+}
+
+@media only screen and (max-width:645px) {
+    
+    .mainContainer {
+        width: 70%;
+    }
+
+    .container1, .left-container2, .right-container2 {
+        padding: 8px 25px 20px 25px; 
+        /* padding changed to less room inside the boxes to match the model */
+    }
+
+    .summ-c1 span {
+        display: inline;        
+    }
+
+    .summ-c2 {
+        margin-bottom: 28px;
+        font-size: 0.95rem;
+    }
+
+    .why-us-reason {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .smallTitle {
+        font-size: 1rem;
+    }
+
+    .summ-c1 {
+        font-size: 0.85rem;
+        margin-top: 19px;
+    }
+}
