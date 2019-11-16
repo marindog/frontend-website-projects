@@ -113,9 +113,12 @@ footer {
     right: 2px;
     border-radius: 3px;
     border: 0.5px solid grey;
-    text-decoration: none;
     padding: 3px;
     background-color: white;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 footer a:hover {
