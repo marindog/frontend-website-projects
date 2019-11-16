@@ -115,11 +115,15 @@ footer {
     border: 0.5px solid grey;
     text-decoration: none;
     padding: 3px;
+    background-color: white;
 }
 
 footer a:hover {
     color: grey;
 }
+
+footer a:visited {
+    color: black;
     
 
 /* -----From here: Screen responsive design for mobiles & tablets ------ */
