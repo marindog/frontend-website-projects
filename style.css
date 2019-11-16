@@ -108,9 +108,9 @@ body {
     text-align: right;    
 }
 
-footer a {
+footer {
     position: absolute;
-    right: 10px;
+    right: 2px;
     border-radius: 3px;
     border: 0.5px solid grey;
     text-decoration: none;
