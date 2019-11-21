@@ -4,7 +4,7 @@ body {
     margin: auto;
     position: fixed;
     background-color: hsl(257, 40%, 49%);
-    background-image:url(..Project 3 - huddle-simple/Images/bg-desktop.svg); 
+    background-image:url("..Project 3 - huddle-simple/Images/bg-desktop.svg"); 
     background-repeat: repeat-y;
     background-size: auto;    
 }
@@ -244,7 +244,7 @@ body {
     body {
         width: 100%;
         height: auto;
-        background-image: url(../Project 3 - huddle-simple/Images/bg-mobile.svg);
+        background-image: url("../Project 3 - huddle-simple/Images/bg-mobile.svg");
         background-size: cover;
         background-repeat: no-repeat;
     }
