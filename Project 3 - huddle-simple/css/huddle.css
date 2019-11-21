@@ -4,106 +4,122 @@ body {
     margin: auto;
     position: fixed;
     background-color: hsl(257, 40%, 49%);
-    background-image: url(../Images/bg-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image:url(..Project 3 - huddle-simple/img/bg-desktop.svg); 
+    background-repeat: repeat-y;
+    background-size: auto;    
 }
-
-
 
 .logo {
     width: 25%;
+    height: auto;
     position: absolute;
     top: 50px;
-    left: 50px;
+    left: 70px;
 }
 
+
+/* --------main section for the image & wording from here --------------- */
 .mainSection {
     width: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: 25px;
     margin-right: 50px; 
     position: absolute;
     top: 195px;
     justify-content: center;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .screenImage {
-    padding: 0 30px;
-    width: 55%;
-    height: auto;
-
-   
+    width:45%;
+    height: 100%;
+    padding: 10px 40px; 
 }
 
-
-
-
+/* -------------wording contains all words plus icons : using Flex-------------- */
 .wording {
     width: 45%;
-    width: 80%;
+    height: auto;    
     padding-top:25px;
-    padding-left: 35px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .heading {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 38px;
-    line-height: 25px;    
+    line-height: 25px;   
+    text-shadow: 1px 1px 5px hsl(257, 42%, 27%); 
 }
 
 .summ {
-    width:78%;
+    width:85%;
     line-height: 25px;
-    margin-bottom: 30px;
-    font-stretch: extra-expanded;   
+    margin-bottom: 40px;
+    font-size: 1.15rem; 
 }
 
-.wording a {
-    width: 100%;
+
+/* register link plus icons */
+.regoIcon {
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.register {
+    width: 10%;
+    border: 1px solid white;
     text-decoration: none;
     color:hsl(257, 40%, 49%);
-    border-radius: 25px;
-    padding: 12px 50px;
-    background-color: white;
+    border-radius: 35px;
+    padding: 13px 65px;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 2px 5px 10px hsl(257, 42%, 27%);    
+    font-size: 1.1rem;
+    box-shadow: 2px 5px 10px hsl(257, 42%, 27%);  
+}
+
+.register:hover {
+    background-color: hsl(258, 55%, 88%);
 }
 
 .icons {
-    position: absolute;
-    bottom: 20px;
-    right:30px;
-    color: white;  
+    margin-top: 22%;
+    text-align: right;
+}
+
+/* icons - individual styling needed */
+#facebook:hover, #twitter:hover, #insta:hover {
+    color: hsl(257, 80%, 76%);
 }
 
 #facebook {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     padding: 10px 14px;
     margin: 5px;
     text-decoration: none;
-    color: white; 
+    color: rgb(255, 255, 255); 
 }
 
 #twitter, #insta {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     padding: 10px 12px;
     margin: 5px;
     text-decoration: none;
-    color: white; 
+    color: rgb(255, 255, 255); 
 }
 
-
-
-@media only screen and (max-width: 1285px) {
+/* ----------------Responsive design starts from here-------------- */
+@media only screen and (max-width: 1410px) {
 
     body {
         width: 100%;
@@ -111,11 +127,351 @@ body {
     }
 
     .heading {
-        font-size: 30px;
+        font-size: 32px;
     }
 
-    .summ, .wording a {
-        font-size: 0.9rem;
+    .summ, .register {
+        font-size: 1rem;
     }
 }
+
+@media only screen and (max-width: 1253px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wording {
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .heading {
+        font-size: 32px;
+    }    
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wording {
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .heading {
+        font-size: 31px;
+    }
+
+    .summ, .register{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 972px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .logo svg{
+        position: absolute;     
+        width: 85%;
+        height: auto;
+        left: 70%;
+        margin-top: -10px;
+    }
+
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto; 
+        margin-top: -85px; 
+        padding-bottom: 100px;   
+    }
+
+    .screenImage, .wording {
+        padding: 0;
+        width: 50%;
+        margin: auto;
+        text-align: auto;        
+    }
+
+    .wording {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        line-height: 70%;
+    }  
+   
+    .summ {
+        margin: auto;
+        font-size: 0.8rem;
+        margin-bottom: 7px;    
+        line-height: 150%;         
+    }
+
+    .regoIcon {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .register {
+        margin-bottom: 70px;
+        padding: 11px 65px;
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        text-align: center;
+    }   
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        height: auto;
+        background-image: url(../Project 3 - huddle-simple/img/bg-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo svg{
+          
+        width: 85%;       
+        left: 60%;
+    }
+   
+    .mainSection {
+        
+        margin-top: -80px;       
+        padding-bottom: 100px;   
+    }
+
+    .screenImage, .wording {
+        padding: 0;
+        width: 50%;
+        margin: auto;
+        text-align: auto;        
+    }
+
+    .wording {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        line-height: 70%;
+    }  
+   
+    .summ {
+        margin: auto;
+        font-size: 0.7rem;
+        line-height: 160%;         
+    }
+    .regoIcon {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .register {
+        margin-bottom: 70px;
+        padding: 9px 60px;
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    } 
+    
+    #facebook {
+        padding: 9px 12px;
+        margin: 1px;
+    }
+
+
+    #twitter, #insta {
+        padding: 9px 10px;
+        margin: 1px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        height: auto;        
+    }
+
+    .logo svg{
+        width: 110%;     
+        left: -10%;            
+    }
+   
+    .mainSection {        
+        margin-top: -80px;       
+        padding-bottom: 100px;   
+    }
+
+    .screenImage, .wording {
+        padding: 0;
+        width: 75%;
+        margin: auto;
+        text-align: auto;        
+    }
+
+    .wording {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        line-height: 70%;
+    }    
+   
+    .summ {
+        margin: auto;
+        font-size: 0.8rem;
+        line-height: 140%;         
+    }
+
+    .regoIcon {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .register {
+        margin-bottom: 80px;
+        padding: 9px 60px;
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    }   
+}
+
+
+@media only screen and (max-width: 441px) {
+
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo svg{
+
+        width: 115%;     
+        left: -20%;            
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .logo svg{
+        width: 130%;     
+        left: -30%;            
+    }
+
+    .mainSection {        
+        margin-top: -85px;   
+    }
+
+    .heading {
+        font-size: 1.2rem;
+        line-height: 80%;
+    }  
+   
+   
+    .summ {
+        margin: auto;
+        font-size: 0.8rem;
+        line-height: 140%;  
+       
+    }
+    .regoIcon {
+        margin: auto;
+        margin-top: 30px;
+
+    }
+
+    .register {
+        padding: 9px 60px;
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        margin-top: 60px;
+    }
+}
+
+   
+
+@media only screen and (max-width: 360px) {
+
+    .mainSection {        
+        margin-top: -100px;   
+    }
+
+
+    .heading {
+        font-size: 1.15rem;
+        line-height: 70%;
+    }  
+   
+   
+    .summ {
+        margin: auto;
+        font-size: 0.7rem;
+        line-height: 140%;  
+       
+    }
+    .regoIcon {
+        margin: auto;
+        margin-top: 30px;
+
+    }
+
+    .register {
+        padding: 9px 60px;
+        font-size: 0.8rem;
+    }
+
+
+    .icons {
+        margin-top: 30px;
+    }
+}
+
+
+
+    
+
+
+
+
+
+
+
+    
 
