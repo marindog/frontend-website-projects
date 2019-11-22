@@ -118,6 +118,10 @@ body {
     color: rgb(255, 255, 255); 
 }
 
+.logo span, .icons span {
+    display: none;
+}
+
 /* ----------------Responsive design starts from here-------------- */
 @media only screen and (max-width: 1410px) {
 
